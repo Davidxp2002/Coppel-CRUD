@@ -1,0 +1,9 @@
+.logo-center {
+    flex: 1 1 auto;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+  }

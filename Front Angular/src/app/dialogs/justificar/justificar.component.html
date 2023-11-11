@@ -1,0 +1,17 @@
+<div mat-dialog-content>
+    <h1 style="font-weight: bold; color: black;">Justificar chequeo</h1>
+    <form [formGroup]="justificacion">
+        <mat-form-field appearance="outline">
+          <mat-label>ID Chequeo</mat-label>
+          <input type="number" matInput formControlName="idChequeo">
+        </mat-form-field>
+        <mat-form-field appearance="outline" style="margin-left: 20px;">
+          <mat-label>Justificación</mat-label>
+          <input type="text" matInput formControlName="justificacion">
+        </mat-form-field>
+    </form>
+    <button mat-raised-button style="background-color: darkblue; color: white;"  matTooltip="Justificar checada" (click)="justificar()">
+        Justificar Checada
+        <mat-icon>sms_failed</mat-icon>
+      </button>
+</div>

@@ -1,0 +1,50 @@
+.content-center{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex: 1 1 auto;
+}
+.page,
+[class*="page-"] {
+  display: flex;
+}
+
+.page {
+  flex-flow: column;
+  margin: 0 auto;
+  padding: 40px 0 0;
+  max-width: 1300px;
+  &-table {
+    flex-flow: column;
+  }
+  &-filter {
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: baseline;
+
+    &-submit {
+      flex-flow: row;
+      align-items: baseline;
+      button:nth-child(-n+1) {
+        margin-right: 20px;
+        margin-left: 100px;
+      }
+    }
+    &-button {
+      flex-flow: row;
+      align-items: baseline;
+
+      p {
+        margin: 0;
+        padding-right: 8px;
+      }
+    }
+  }
+}
+
+::ng-deep .mdc-card {
+  padding: 16px;
+}
+::ng-deep .mat-mdc-fab, .mat-mdc-mini-fab {
+  box-shadow: none;
+}
